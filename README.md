@@ -59,11 +59,11 @@ Links:
 - [x] Autorizador de APIs (4:00)
 - [x] Credential Sharing (5:00)
 - [x] Cookies (4:00)
-- [ ] JWT (2:00)
-- [ ] API Keys (2:00)
-- [ ] OAuth 2.0 (9:00)
-- [ ] Cenário (4:00)
-- [ ] Configurando IdentityServer4 (4:00)
+- [x] JWT (2:00)
+- [x] API Keys (2:00)
+- [x] OAuth 2.0 (9:00)
+- [x] Cenário (4:00)
+- [x] ????Configurando IdentityServer4 (4:00)
 - [ ] Sumário (2:00)
 
 ### OpenId Connect com IdentityServer4
