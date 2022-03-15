@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD026 -->
-# UML and Object-Oriented Design Foundations
+# Fundamentos de IdentityServer4
 
 [![Desenvolvedor.io](https://desenvolvedor.io/images/home.png)](https://desenvolvedor.io)
 
@@ -16,8 +16,6 @@ Course / Curso: [Fundamentos de IdentityServer4](https://desenvolvedor.io/curso-
 ## Instructor / Instrutor
 
 ### [Bruno Brito](https://desenvolvedor.io/instrutor/bruno-brito) • Microsoft MVP
-
-[Data from Udemy / Dados da Udemy](https://www.udemy.com/course/uml-and-object-oriented-design-foundations/#instructor-1):
 
 > Bruno Brito é Microsoft MVP e arquiteto de software no desenvolvedor.io
 

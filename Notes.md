@@ -22,7 +22,7 @@ dotnet new is4admin --force
 
 Os templates estão bem desatualizados, aparentemente o projeto [IdentityServer4.Templates](https://github.com/IdentityServer/IdentityServer4.Templates) está utilizando a versão 3.1 do dotnet e vai ser descontinuado em Dezembro de 2022. Portanto para prosseguir com o curso eu criei um novo "global.json" para o projeto utilizando o comando  `dotnet new globaljson` e configurei para utilizar a versão 3.1.1XX do dotnet.
 
-No linux eu tive que instalar o sdk 3.1 com o script da microsoft:
+No linux eu tive que instalar o sdk 3.1 com o script da microsoft (arch btw):
 
 ```bash
 # Baixando o script de instalação da microsoft
