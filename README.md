@@ -97,3 +97,7 @@ Links:
 
 - [ ] Juntando as peças (4:00)
 - [ ] Considerações Finais (2:00)
+
+## Anotações
+
+As anotações do curso estão no arquivo [Notes.md](Notes.md).
