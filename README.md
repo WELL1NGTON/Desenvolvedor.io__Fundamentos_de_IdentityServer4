@@ -66,10 +66,10 @@ Links:
 
 ### OpenId Connect com IdentityServer4
 
-- [ ] Introdução (1:00)
-- [ ] OpenId Connect (6:00)
-- [ ] Implicit Flow (2:00)
-- [ ] Authorization Code (6:00)
+- [x] Introdução (1:00)
+- [x] OpenId Connect (6:00)
+- [x] Implicit Flow (2:00)
+- [x] Authorization Code (6:00)
 - [ ] Desacoplando o ASP.NET Identity (13:00)
 - [ ] Implementando Authorization Code (13:00)
 - [ ] Sumário (1:00)

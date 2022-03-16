@@ -5,13 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (web)",
+            "name": "Módulo 3 - Curso IS4",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/CursoIS4/bin/Debug/netcoreapp3.1/CursoIS4.dll",
+            "preLaunchTask": "build.Modulo3.CursoIS4",
+            "program": "${workspaceFolder}/Modulo3/CursoIS4/bin/Debug/netcoreapp3.1/CursoIS4.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/CursoIS4",
+            "cwd": "${workspaceFolder}/Modulo3/CursoIS4",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
@@ -19,7 +19,52 @@
                 "uriFormat": "http://localhost:5000"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5000;https://localhost:5001",
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Módulo 4 - SkyCommerce.Site",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build.Modulo4.SkyCommerce.Site",
+            "program": "${workspaceFolder}/Modulo4/SkyCommerce/SkyCommerce.Loja/SkyCommerce.Site/bin/Debug/netcoreapp3.1/SkyCommerce.Site.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Modulo4/SkyCommerce/SkyCommerce.Loja/SkyCommerce.Site",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "%s"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5005;https://localhost:5006",
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Módulo 4 - SkyCommerce.SSO",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build.Modulo4.SkyCommerce.SSO",
+            "program": "${workspaceFolder}/Modulo4/SkyCommerce/SkyCommerce.SSO/bin/Debug/netcoreapp3.1/SkyCommerce.SSO.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Modulo4/SkyCommerce/SkyCommerce.SSO",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bCompleted migration: WsFed",
+                "uriFormat": "http://localhost:5000"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5000;https://localhost:5001",
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
@@ -29,6 +74,15 @@
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "SkyCommerce SSO+Site",
+            "configurations": [
+                "Módulo 4 - SkyCommerce.Site",
+                "Módulo 4 - SkyCommerce.SSO"
+            ]
         }
     ]
 }

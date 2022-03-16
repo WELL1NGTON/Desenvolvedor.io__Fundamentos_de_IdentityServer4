@@ -2,38 +2,62 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "build.Modulo3.CursoIS4",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/CursoIS4/CursoIS4.csproj",
+                "${workspaceFolder}/Modulo3/CursoIS4/CursoIS4.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "publish",
+            "label": "publish.Modulo3.CursoIS4",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/CursoIS4/CursoIS4.csproj",
+                "${workspaceFolder}/Modulo3/CursoIS4/CursoIS4.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "watch",
+            "label": "watch.Modulo3.CursoIS4",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/CursoIS4/CursoIS4.csproj"
+                "${workspaceFolder}/Modulo3/CursoIS4/CursoIS4.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build.Modulo4.SkyCommerce.Site",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Modulo4/SkyCommerce/SkyCommerce.Loja/SkyCommerce.Site/SkyCommerce.Site.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build.Modulo4.SkyCommerce.SSO",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Modulo4/SkyCommerce/SkyCommerce.SSO/SkyCommerce.SSO.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         }

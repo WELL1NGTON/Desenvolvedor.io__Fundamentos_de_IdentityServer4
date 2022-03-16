@@ -18,5 +18,8 @@
       "**/bin/*": true,
       "**/obj/*": true
     },
-    "vssolution.solutionExplorerIcons": "mix"
+    "vssolution.solutionExplorerIcons": "mix",
+    "vssolution.altSolutionFolders": [
+      "Modulo3", "Modulo4/SkyCommerce"
+    ]
 }
