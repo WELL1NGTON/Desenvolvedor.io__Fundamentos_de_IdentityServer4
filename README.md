@@ -61,8 +61,8 @@ Links:
 - [x] API Keys (2:00)
 - [x] OAuth 2.0 (9:00)
 - [x] Cenário (4:00)
-- [x] ????Configurando IdentityServer4 (4:00)
-- [ ] Sumário (2:00)
+- [x] Configurando IdentityServer4 (4:00)
+- [x] Sumário (2:00)
 
 ### OpenId Connect com IdentityServer4
 

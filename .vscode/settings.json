@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+      "**/*.ruleset": "xml",
+      "**/appsettings*.json": "jsonc"
+    },
+    "files.exclude": {
+      "**/bin": true,
+      "**/obj": true,
+      "**/*.csproj.user": true,
+      "**/.vs": true,
+      "__azurite*": true,
+      "__blobstorage__": true,
+      "__queuestorage__": true
+    },
+    "editor.rulers": [120],
+    "files.watcherExclude": {
+      "**/node_modules/*/**": true,
+      "**/bin/*": true,
+      "**/obj/*": true
+    },
+    "vssolution.solutionExplorerIcons": "mix"
+}
