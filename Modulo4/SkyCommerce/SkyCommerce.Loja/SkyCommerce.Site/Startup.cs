@@ -41,7 +41,10 @@ namespace SkyCommerce.Site
                 .AddCookie("Cookies")
                 .AddOpenIdConnect("oidc", options =>
                 {
-                    options.Authority = "https://localhost:5001";
+                    options.Authority = "http://localhost:5000";
+
+                    // Desabilitando a necessidade de https
+                    options.RequireHttpsMetadata = false;
 
                     options.ClientId = "c474a947dfba499a8b42a27802fa05a2";
                     options.ClientSecret = "9a71b8fff7674a80b7f9350622082bdb";
