@@ -35,3 +35,11 @@ chmod +x ./dotnet-install.sh
 # Obs.: utilizando os sdks do AUR arch linux
 sudo ./dotnet-install.sh -c 3.1 --install-dir /usr/share/dotnets
 ```
+
+## OpenId Connect com IdentityServer4
+
+### Implementando Authorization Code
+
+Estão ocorrendo problemas com ssl, eu permiti certificados localhost no chrome e não funcionou...
+
+Coloquei também a opção `options.RequireHttpsMetadata = false;` no startup do projeto "Site" e troquei para utilizar http e agora entra na página de login, porém após digitar a senha correta (User: bob, Password: Bob123!!) não consegui logar, aparentemente não dá erro, mas não redireciona. `:(`
