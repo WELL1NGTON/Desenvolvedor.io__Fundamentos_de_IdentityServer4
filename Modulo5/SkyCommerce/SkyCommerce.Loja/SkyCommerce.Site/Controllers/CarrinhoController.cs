@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SkyCommerce.Extensions;
@@ -37,8 +38,10 @@ namespace SkyCommerce.Site.Controllers
 
         public async Task<IActionResult> Index()
         {
+            var at = await _httpContextAccessor.HttpContext.GetTokenAsync("access_token");
+
             var carrinho = await _carrinhoStore.ObterCarrinho(User.Identity.Name);
-            var fretes = await _freteService.CalcularCarrinho(carrinho, await _geoposicaoService.GeolocalizarUsuario());
+            var fretes = await _freteService.CalcularCarrinho(carrinho, await _geoposicaoService.GeolocalizarUsuario(), at);
             return View(new CarrinhoViewModel()
             {
                 Carrinho = carrinho,
@@ -100,7 +103,9 @@ namespace SkyCommerce.Site.Controllers
         [Route("selecionar-frete")]
         public async Task<IActionResult> SelecionarFrete(string returnurl, [FromForm] SelecionarFreteViewModel model)
         {
-            await _carrinhoService.SelecionarFrete(User.Identity.Name, model.Modalidade, await _geoposicaoService.GeolocalizarUsuario());
+            var at = await _httpContextAccessor.HttpContext.GetTokenAsync("access_token");
+
+            await _carrinhoService.SelecionarFrete(User.Identity.Name, model.Modalidade, await _geoposicaoService.GeolocalizarUsuario(), at);
 
             if (returnurl.IsPresent())
                 return Redirect(returnurl);

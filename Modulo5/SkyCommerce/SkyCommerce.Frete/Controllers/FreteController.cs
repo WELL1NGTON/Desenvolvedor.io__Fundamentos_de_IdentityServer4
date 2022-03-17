@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using SkyCommerce.Fretes.Context;
@@ -31,7 +32,7 @@ namespace SkyCommerce.Fretes.Controllers
             return Ok(await _context.Fretes.Where(w => w.Ativo).Select(s => s.ToViewModel()).ToListAsync());
         }
 
-        [HttpGet("para/{lat},{lon}/calcular")]
+        [HttpGet("para/{lat},{lon}/calcular"), Authorize]
         public async Task<ActionResult<IEnumerable<CalculoFreteViewModel>>> Calcular(double lat, double lon, [FromQuery] EmbalagemViewModel embalagem)
         {
             _logger.LogInformation($"Calculando frete para {lat},{lon}");

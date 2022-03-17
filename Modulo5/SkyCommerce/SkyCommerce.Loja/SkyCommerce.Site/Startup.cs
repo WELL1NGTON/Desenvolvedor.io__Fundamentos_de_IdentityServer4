@@ -48,6 +48,7 @@ namespace SkyCommerce.Site
                     options.ResponseType = "code";
                     options.Scope.Add("openid");
                     options.Scope.Add("profile");
+                    options.Scope.Add("api_frete");
                     options.SaveTokens = true;
                     options.GetClaimsFromUserInfoEndpoint = true;
 
@@ -83,7 +84,7 @@ namespace SkyCommerce.Site
                 app.UseHsts();
             }
 
-            // Definindo a cultura padrão: pt-BR
+            // Definindo a cultura padrï¿½o: pt-BR
             var supportedCultures = new[] { new CultureInfo("pt-BR") };
             app.UseRequestLocalization(new RequestLocalizationOptions
             {
