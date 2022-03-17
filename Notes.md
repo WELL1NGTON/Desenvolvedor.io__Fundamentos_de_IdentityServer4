@@ -45,3 +45,35 @@ Estão ocorrendo problemas com ssl, eu permiti certificados localhost no chrome 
 Coloquei também a opção `options.RequireHttpsMetadata = false;` no startup do projeto "Site" e troquei para utilizar http e agora entra na página de login, porém após digitar a senha correta (User: bob, Password: Bob123!!) não consegui logar, aparentemente não dá erro, mas não redireciona. `:(`
 
 Reativando o ssl e rodando no windows funcionou perfeitamente, o problema provavelmente é relacionado ao certificado auto assinado no linux, devo ter cometido algum erro instalando. TODO: Revisar instalação do certificado autoassinado dotnetcore no archlinux.
+
+#### Update
+
+Corrigido o problema no linux! O problema realmente era certificado autoassinado, agora para rodar esse projeto no linux, é necessário criar um certificado em `~/.aspnet/https/localhost.pfx` sem senha (ou alterar a senha no launcher.json) e fazer o linux aceitar esse certificado.
+
+Para facilitar eu usei o script [dev-cert.sh](https://github.com/amadoa/dotnet-devcert-linux/blob/master/dev-cert.sh) do repositório github [amadoa/dotnet-devcert-linux](https://github.com/amadoa/dotnet-devcert-linux).
+
+E depois para fazer o linux "acreditar"/"trust" o certificado, eu utilizei o comando trust do pacote [p11-kit](https://archlinux.org/packages/core/x86_64/p11-kit/) do archlinux.
+
+Exemplo:
+
+```bash
+# Baixando o script para gerar o certificado
+wget https://raw.githubusercontent.com/amadoa/dotnet-devcert-linux/master/dev-cert.sh
+
+# Criando o diretório de certificados manualmente porque o script não cria
+mkdir -p ~/.aspnet/https
+
+# Tornando o script executável
+chmod +x dev-cert.sh
+
+# Executando o script para gerar o certificado
+./dev-cert.sh
+
+# Removendo o script
+rm dev-cert.sh
+
+# Fazendo o linux "acreditar" o certificado
+sudo trust anchor $HOME/.aspnet/https/ca.crt
+```
+
+Obs.: pode ser necessário reiniciar o chrome ou mesmo o computador para que o certificado seja reconhecido.

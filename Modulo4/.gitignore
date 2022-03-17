@@ -254,3 +254,5 @@ docs/.vscode
 # Log files
 **/*log*.txt
 #*.db
+**/tempkey.rsa
+**/current.key
