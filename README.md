@@ -70,9 +70,9 @@ Links:
 - [x] OpenId Connect (6:00)
 - [x] Implicit Flow (2:00)
 - [x] Authorization Code (6:00)
-- [ ] Desacoplando o ASP.NET Identity (13:00)
-- [ ] Implementando Authorization Code (13:00)
-- [ ] Sumário (1:00)
+- [x] Desacoplando o ASP.NET Identity (13:00)
+- [x] Implementando Authorization Code (13:00)
+- [x] Sumário (1:00)
 
 ### Protegendo APIs com IdentityServer4
 
