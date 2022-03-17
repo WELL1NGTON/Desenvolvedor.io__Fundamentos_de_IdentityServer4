@@ -96,7 +96,7 @@
     ],
     "compounds": [
         {
-            "name": "SkyCommerce SSO+Site",
+            "name": "Módulo 4 SSO+Site",
             "configurations": [
                 "Módulo 4 - SkyCommerce.Site",
                 "Módulo 4 - SkyCommerce.SSO"
