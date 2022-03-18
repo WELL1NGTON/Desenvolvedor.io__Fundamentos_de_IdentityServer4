@@ -56,6 +56,15 @@ namespace SkyCommerce.Fretes
                     {securityScheme, new string[] { }}
                 });
             });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Gerente", policy =>
+                    policy.RequireClaim("Cargo", "Gerente"));
+
+                options.AddPolicy("B2B", policy =>
+                    policy.RequireAssertion(ctx => ctx.User.Identity.IsAuthenticated || ctx.User.HasClaim("parceiro", "frete")));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

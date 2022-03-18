@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -6,12 +7,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Logging;
+using Microsoft.IdentityModel.Tokens;
 using SkyCommerce.Data.Configuration;
 using SkyCommerce.Data.Context;
 using SkyCommerce.Site.Configure;
 using System.Globalization;
 using System.IdentityModel.Tokens.Jwt;
-using Microsoft.IdentityModel.Tokens;
+using System.Threading.Tasks;
 
 namespace SkyCommerce.Site
 {
@@ -49,13 +51,20 @@ namespace SkyCommerce.Site
                     options.Scope.Add("openid");
                     options.Scope.Add("profile");
                     options.Scope.Add("api_frete");
-                    options.SaveTokens = true;
+                    options.Scope.Add("company_info");
                     options.GetClaimsFromUserInfoEndpoint = true;
-
+                    options.SaveTokens = true;
+                    options.Events.OnUserInformationReceived = context =>
+                    {
+                        options.ClaimActions.MapUniqueJsonKey("Cargo", "Cargo");
+                        options.ClaimActions.MapUniqueJsonKey("picture", "picture");
+                        return Task.CompletedTask;
+                    };
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         NameClaimType = "name",
-                        RoleClaimType = "role"
+                        RoleClaimType = "role",
+
                     };
                 });
 

@@ -87,3 +87,9 @@ Obs.: pode ser necessário reiniciar o chrome ou mesmo o computador para que o c
 Até o momento tudo certo, as configurações foram feitas igual no módulo 4, porém o usuário bob agora está com os dados padrões dele (igual ao curso), nem sei qual é a senha dele, mas como já aparece "auto completada" pela própria aplicação como exemplo, é só clicar em logar direto que vai logar com o usuário bob.
 
 Obs.: Para executar o projeto no vscode, selecione "Módulo 5 All" nas opções do debugger do vscode. E se estiver no linux siga as instruções do módulo 4 sobre o certificado auto assinado ssl.
+
+### Protegendo a API com IdentityResource
+
+Para a aula 4, aparentemente o material está errado, o instrutor altera métodos que não existem no material base para as aulas, então eu baixei a versão final (com as alterações da aula já feitas) e fui seguindo as alterações apenas observando os arquivos.
+
+Obs.: é falado na aula 4 em 01:30 "Essa aula vai estar disponível no material como módulo 5 Modulo-5-Aula-3-Inicio e os métodos já estarão prontos para você também acompanhar na aula.", porém conferi os arquivos novamente e os métodos do controller realmente estão faltando (AdicionarModalidade e RemoverModalidade).

@@ -76,10 +76,10 @@ Links:
 
 ### Protegendo APIs com IdentityServer4
 
-- [ ] Introdução (1:00)
-- [ ] Protegendo a API (17:00)
-- [ ] Debugando o JWT (2:00)
-- [ ] Protegendo a API com IdentityResource (8:00)
+- [x] Introdução (1:00)
+- [x] Protegendo a API (17:00)
+- [x] Debugando o JWT (2:00)
+- [x] Protegendo a API com IdentityResource (8:00)
 - [ ] Acessando o IdentityResource no client (6:00)
 - [ ] ID Token vs Access Token (1:00)
 - [ ] Protegendo a API com Scopes (8:00)

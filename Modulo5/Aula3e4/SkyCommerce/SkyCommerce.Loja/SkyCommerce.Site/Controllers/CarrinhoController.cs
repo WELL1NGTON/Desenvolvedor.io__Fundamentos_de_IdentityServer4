@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authentication;
+﻿using System.Linq;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -39,7 +41,8 @@ namespace SkyCommerce.Site.Controllers
         public async Task<IActionResult> Index()
         {
             var carrinho = await _carrinhoStore.ObterCarrinho(User.Identity.Name);
-
+            var cargodoUsuario = User.Claims.FirstOrDefault(f => f.Type.Equals("Cargo"));
+            
             var at = await _httpContextAccessor.HttpContext.GetTokenAsync("access_token");
             var fretes = await _freteService.CalcularCarrinho(carrinho, await _geoposicaoService.GeolocalizarUsuario(), at);
             return View(new CarrinhoViewModel()

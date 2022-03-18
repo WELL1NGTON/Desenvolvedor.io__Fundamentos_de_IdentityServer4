@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore.Internal;
 using SkyCommerce.Fretes.Model;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace SkyCommerce.Fretes.ViewModels
 {
@@ -13,6 +14,7 @@ namespace SkyCommerce.Fretes.ViewModels
         public decimal ValorMinimo { get; set; }
         public decimal Multiplicador { get; set; }
 
+        [JsonIgnore]
         public ValidationProblemDetails Errors { get; private set; }
         public Frete ToEntity()
         {

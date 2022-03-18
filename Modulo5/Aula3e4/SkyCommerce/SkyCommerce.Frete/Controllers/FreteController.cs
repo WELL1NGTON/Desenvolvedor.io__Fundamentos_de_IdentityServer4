@@ -42,5 +42,35 @@ namespace SkyCommerce.Fretes.Controllers
             return Ok(opcoesFrete.Select(s => s.ToViewModel(s.CalcularFrete(embalagem, posicao))));
         }
 
+        [HttpPost, Authorize(Policy = "Gerente")]
+        public async Task<ActionResult<FreteViewModel>> AdicionarModalidade([FromBody] FreteViewModel command)
+        {
+            command.Check();
+            if (!command.IsValid())
+            {
+                return BadRequest(command.Errors);
+            }
+
+            if (await _context.Fretes.AnyAsync(a => a.Modalidade.ToUpper().Equals(command.Modalidade.Trim().ToUpper())))
+            {
+                command.SetError("Modalidade já existe");
+                return BadRequest(command.Errors);
+            }
+
+
+            var frete = command.ToEntity();
+            await _context.Fretes.AddAsync(frete);
+            return Created(nameof(ObterModalidades), command);
+        }
+
+
+        [HttpDelete("{modalidade}"), Authorize(Policy = "Gerente")]
+        public async Task<ActionResult<FreteViewModel>> RemoverModalidade(string modalidade)
+        {
+            var frete = await _context.Fretes.FirstOrDefaultAsync(a => a.Modalidade.ToUpper().Equals(modalidade.Trim().ToUpper()));
+            frete.Inativar();
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
     }
 }

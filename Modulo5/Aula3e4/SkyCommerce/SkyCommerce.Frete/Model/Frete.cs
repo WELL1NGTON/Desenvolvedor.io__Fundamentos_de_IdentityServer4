@@ -33,5 +33,9 @@ namespace SkyCommerce.Fretes.Model
             return valor * Multiplicador;
         }
 
+        public void Inativar()
+        {
+            Ativo = false;
+        }
     }
 }
