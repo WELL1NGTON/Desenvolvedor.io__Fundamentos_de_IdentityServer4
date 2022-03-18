@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Módulo 3 - Curso IS4",
+            "name": "Módulo 3 - Aula 10 - Curso IS4",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build.Modulo3.CursoIS4",
@@ -89,13 +89,13 @@
             }
         },
         {
-            "name": "Módulo 5 - SkyCommerce.Frete",
+            "name": "Módulo 5 - Aula 2 - SkyCommerce.Frete",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build.Modulo5.SkyCommerce.Frete",
-            "program": "${workspaceFolder}/Modulo5/SkyCommerce/SkyCommerce.Frete/bin/Debug/netcoreapp3.1/SkyCommerce.Fretes.dll",
+            "preLaunchTask": "build.Modulo5.Aula2.SkyCommerce.Frete",
+            "program": "${workspaceFolder}/Modulo5/Aula2/SkyCommerce/SkyCommerce.Frete/bin/Debug/netcoreapp3.1/SkyCommerce.Fretes.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Modulo5/SkyCommerce/SkyCommerce.Frete",
+            "cwd": "${workspaceFolder}/Modulo5/Aula2/SkyCommerce/SkyCommerce.Frete",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
@@ -117,13 +117,13 @@
             }
         },
         {
-            "name": "Módulo 5 - SkyCommerce.Site",
+            "name": "Módulo 5 - Aula 2 - SkyCommerce.Site",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build.Modulo5.SkyCommerce.Site",
-            "program": "${workspaceFolder}/Modulo5/SkyCommerce/SkyCommerce.Loja/SkyCommerce.Site/bin/Debug/netcoreapp3.1/SkyCommerce.Site.dll",
+            "preLaunchTask": "build.Modulo5.Aula2.SkyCommerce.Site",
+            "program": "${workspaceFolder}/Modulo5/Aula2/SkyCommerce/SkyCommerce.Loja/SkyCommerce.Site/bin/Debug/netcoreapp3.1/SkyCommerce.Site.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Modulo5/SkyCommerce/SkyCommerce.Loja/SkyCommerce.Site",
+            "cwd": "${workspaceFolder}/Modulo5/Aula2/SkyCommerce/SkyCommerce.Loja/SkyCommerce.Site",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
@@ -145,13 +145,13 @@
             }
         },
         {
-            "name": "Módulo 5 - SkyCommerce.SSO",
+            "name": "Módulo 5 - Aula 2 - SkyCommerce.SSO",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build.Modulo5.SkyCommerce.SSO",
-            "program": "${workspaceFolder}/Modulo5/SkyCommerce/SkyCommerce.SSO/bin/Debug/netcoreapp3.1/SkyCommerce.SSO.dll",
+            "preLaunchTask": "build.Modulo5.Aula2.SkyCommerce.SSO",
+            "program": "${workspaceFolder}/Modulo5/Aula2/SkyCommerce/SkyCommerce.SSO/bin/Debug/netcoreapp3.1/SkyCommerce.SSO.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Modulo5/SkyCommerce/SkyCommerce.SSO",
+            "cwd": "${workspaceFolder}/Modulo5/Aula2/SkyCommerce/SkyCommerce.SSO",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
@@ -180,18 +180,18 @@
     ],
     "compounds": [
         {
-            "name": "Módulo 4 All",
+            "name": "Módulo 4 - Aula 5 - All",
             "configurations": [
                 "Módulo 4 - SkyCommerce.Site",
                 "Módulo 4 - SkyCommerce.SSO"
             ]
         },
         {
-            "name": "Módulo 5 All",
+            "name": "Módulo 5 - Aula 2 - All",
             "configurations": [
-                "Módulo 5 - SkyCommerce.Frete",
-                "Módulo 5 - SkyCommerce.Site",
-                "Módulo 5 - SkyCommerce.SSO"
+                "Módulo 5 - Aula 2 - SkyCommerce.Frete",
+                "Módulo 5 - Aula 2 - SkyCommerce.Site",
+                "Módulo 5 - Aula 2 - SkyCommerce.SSO"
             ]
         }
     ]
