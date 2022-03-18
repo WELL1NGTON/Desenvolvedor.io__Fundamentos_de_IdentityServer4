@@ -1,7 +1,7 @@
 {
-    "recommendations": [
-        "ms-dotnettools.csharp",
-        "doggy8088.netcore-extension-pack",
-        "fernandoescolar.vscode-solution-explorer"
-    ]
+  "recommendations": [
+    "ms-dotnettools.csharp",
+    "doggy8088.netcore-extension-pack",
+    "fernandoescolar.vscode-solution-explorer"
+  ]
 }
