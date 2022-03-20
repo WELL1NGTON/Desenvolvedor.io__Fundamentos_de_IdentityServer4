@@ -87,16 +87,16 @@ Links:
 
 ### JWT - O coração do OAuth 2.0
 
-- [ ] Introdução (1:00)
-- [ ] Bearer Tokens (2:00)
-- [ ] JWT (9:00)
-- [ ] Reference Tokens (6:00)
-- [ ] Sumário (1:00)
+- [x] Introdução (1:00)
+- [x] Bearer Tokens (2:00)
+- [x] JWT (9:00)
+- [x] Reference Tokens (6:00)
+- [x] Sumário (1:00)
 
 ### Finalização
 
-- [ ] Juntando as peças (4:00)
-- [ ] Considerações Finais (2:00)
+- [x] Juntando as peças (4:00)
+- [x] Considerações Finais (2:00)
 
 ## Anotações
 
