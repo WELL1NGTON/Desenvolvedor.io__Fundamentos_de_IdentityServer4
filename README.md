@@ -25,10 +25,9 @@ Links:
 - [GitHub](https://github.com/brunohbrito/)
 - [Linkedin](https://www.linkedin.com/in/bhdebrito/)
 
-<!-- 
-## certificado
+## Certificado
 
-[![certificado udemy](images/uc-)](http://ude.my/uc-) -->
+[![certificado udemy](images/10afe11fe5b7860c4cd9910c73bb0c18bd86b32a1caa9d01980eba815a0d3ecf.png)](https://desenvolvedor.io/certificado/beb797f4-0412-4eb8-ba2d-521fa0d20d4a)
 
 ## Course Progress / Progresso do curso
 
