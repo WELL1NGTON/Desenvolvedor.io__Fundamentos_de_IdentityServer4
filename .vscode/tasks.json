@@ -191,6 +191,57 @@
         "/consoleloggerparameters:NoSummary"
       ],
       "problemMatcher": "$msCompile"
+    },
+    /* -------------------------------------------------------------------------- */
+    /* -------------------------------- Módulo 6 -------------------------------- */
+    /* -------------------------------------------------------------------------- */
+    {
+      "label": "build.Modulo6.Aula4.SkyCommerce.Frete",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Modulo6/Aula4/SkyCommerce/SkyCommerce.Frete/SkyCommerce.Fretes.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build.Modulo6.Aula4.SkyCommerce.Site",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Modulo6/Aula4/SkyCommerce/SkyCommerce.Loja/SkyCommerce.Site/SkyCommerce.Site.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build.Modulo6.Aula4.SkyCommerce.SSO",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Modulo6/Aula4/SkyCommerce/SkyCommerce.SSO/SkyCommerce.SSO.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build.Modulo6.Aula4.Parceiro.BackgroundService",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Modulo6/Aula4/SkyCommerce/Parceiro.BackgroundService/Parceiro.BackgroundService.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
     }
   ]
 }

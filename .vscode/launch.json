@@ -363,6 +363,104 @@
       "console": "integratedTerminal"
     },
     /* -------------------------------------------------------------------------- */
+    /* -------------------------------- Módulo 6 -------------------------------- */
+    /* -------------------------------------------------------------------------- */
+    {
+      "name": "M6/A4 - SkyCommerce.Frete",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build.Modulo6.Aula4.SkyCommerce.Frete",
+      "program": "${workspaceFolder}/Modulo6/Aula4/SkyCommerce/SkyCommerce.Frete/bin/Debug/netcoreapp3.1/SkyCommerce.Fretes.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Modulo6/Aula4/SkyCommerce/SkyCommerce.Frete",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+        "uriFormat": "%s/swagger/index.html"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:5008;https://localhost:5007",
+      },
+      "linux": {
+        "env": {
+          "ASPNETCORE_Kestrel__Certificates__Default__Password": "",
+          "ASPNETCORE_Kestrel__Certificates__Default__Path": "${env:HOME}/.aspnet/https/localhost.pfx"
+        }
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    },
+    {
+      "name": "M6/A4 - SkyCommerce.Site",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build.Modulo6.Aula4.SkyCommerce.Site",
+      "program": "${workspaceFolder}/Modulo6/Aula4/SkyCommerce/SkyCommerce.Loja/SkyCommerce.Site/bin/Debug/netcoreapp3.1/SkyCommerce.Site.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Modulo6/Aula4/SkyCommerce/SkyCommerce.Loja/SkyCommerce.Site",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+        "uriFormat": "%s"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:5005;https://localhost:5006",
+      },
+      "linux": {
+        "env": {
+          "ASPNETCORE_Kestrel__Certificates__Default__Password": "",
+          "ASPNETCORE_Kestrel__Certificates__Default__Path": "${env:HOME}/.aspnet/https/localhost.pfx"
+        }
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    },
+    {
+      "name": "M6/A4 - SkyCommerce.SSO",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build.Modulo6.Aula4.SkyCommerce.SSO",
+      "program": "${workspaceFolder}/Modulo6/Aula4/SkyCommerce/SkyCommerce.SSO/bin/Debug/netcoreapp3.1/SkyCommerce.SSO.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Modulo6/Aula4/SkyCommerce/SkyCommerce.SSO",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bCompleted migration: WsFed",
+        "uriFormat": "http://localhost:5000"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:5000;https://localhost:5001",
+      },
+      "linux": {
+        "env": {
+          "ASPNETCORE_Kestrel__Certificates__Default__Password": "",
+          "ASPNETCORE_Kestrel__Certificates__Default__Path": "${env:HOME}/.aspnet/https/localhost.pfx"
+        }
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    },
+    {
+      "name": "M6/A4 - Parceiro.BackgroundService",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build.Modulo6.Aula4.Parceiro.BackgroundService",
+      "program": "${workspaceFolder}/Modulo6/Aula4/SkyCommerce/Parceiro.BackgroundService/bin/Debug/netcoreapp3.1/Parceiro.BackgroundService.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Modulo6/Aula4/SkyCommerce/Parceiro.BackgroundService",
+      "stopAtEntry": false,
+      "console": "integratedTerminal"
+    },
+    /* -------------------------------------------------------------------------- */
     {
       "name": ".NET Core Attach",
       "type": "coreclr",
@@ -399,6 +497,14 @@
         "M5/A6 - SkyCommerce.Frete",
         "M5/A6 - SkyCommerce.Site",
         "M5/A6 - SkyCommerce.SSO"
+      ]
+    },
+    {
+      "name": "M6/A4 - All",
+      "configurations": [
+        "M6/A4 - SkyCommerce.Frete",
+        "M6/A4 - SkyCommerce.Site",
+        "M6/A4 - SkyCommerce.SSO"
       ]
     }
   ]
