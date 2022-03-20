@@ -1,5 +1,7 @@
 ﻿using IdentityModel.Client;
+
 using Newtonsoft.Json.Linq;
+
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -23,8 +25,8 @@ namespace Parceiro.BackgroundService
             var tokenResponse = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
             {
                 Address = disco.TokenEndpoint,
-                ClientId = "98161f30bdc047dba95b69f5d46dadbf",
-                ClientSecret = "5b1065ab86fb44e0b08f2e639e2025bc",
+                ClientId = "195ba83285124a92b6dd73e0c15f11c3",
+                ClientSecret = "64ef900581c74546b340000677625601",
                 Scope = "api_frete.read_only"
             });
 

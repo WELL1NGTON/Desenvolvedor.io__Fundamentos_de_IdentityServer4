@@ -82,8 +82,8 @@ Links:
 - [x] Protegendo a API com IdentityResource (8:00)
 - [x] Acessando o IdentityResource no client (6:00)
 - [x] ID Token vs Access Token (1:00)
-- [ ] Protegendo a API com Scopes (8:00)
-- [ ] Sumário (1:00)
+- [x] Protegendo a API com Scopes (8:00)
+- [x] Sumário (1:00)
 
 ### JWT - O coração do OAuth 2.0
 

@@ -8,7 +8,7 @@
     /* -------------------------------- Módulo 3 -------------------------------- */
     /* -------------------------------------------------------------------------- */
     {
-      "name": "Módulo 3 - Aula 10 - Curso IS4",
+      "name": "M3/A10 - Curso IS4",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build.Modulo3.CursoIS4",
@@ -39,7 +39,7 @@
     /* -------------------------------- Módulo 4 -------------------------------- */
     /* -------------------------------------------------------------------------- */
     {
-      "name": "Módulo 4 - SkyCommerce.Site",
+      "name": "M4/A5 - SkyCommerce.Site",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build.Modulo4.SkyCommerce.Site",
@@ -67,7 +67,7 @@
       }
     },
     {
-      "name": "Módulo 4 - SkyCommerce.SSO",
+      "name": "M4/A5 - SkyCommerce.SSO",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build.Modulo4.SkyCommerce.SSO",
@@ -98,7 +98,7 @@
     /* -------------------------------- Módulo 5 -------------------------------- */
     /* -------------------------------------------------------------------------- */
     {
-      "name": "Módulo 5 - Aula 2 - SkyCommerce.Frete",
+      "name": "M5/A2 - SkyCommerce.Frete",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build.Modulo5.Aula2.SkyCommerce.Frete",
@@ -126,7 +126,7 @@
       }
     },
     {
-      "name": "Módulo 5 - Aula 2 - SkyCommerce.Site",
+      "name": "M5/A2 - SkyCommerce.Site",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build.Modulo5.Aula2.SkyCommerce.Site",
@@ -154,7 +154,7 @@
       }
     },
     {
-      "name": "Módulo 5 - Aula 2 - SkyCommerce.SSO",
+      "name": "M5/A2 - SkyCommerce.SSO",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build.Modulo5.Aula2.SkyCommerce.SSO",
@@ -183,7 +183,7 @@
     },
     /* -------------------------------------------------------------------------- */
     {
-      "name": "Módulo 5 - Aula 3 e 4 - SkyCommerce.Frete",
+      "name": "M5/A3..4 - SkyCommerce.Frete",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build.Modulo5.Aula3e4.SkyCommerce.Frete",
@@ -211,7 +211,7 @@
       }
     },
     {
-      "name": "Módulo 5 - Aula 3 e 4 - SkyCommerce.Site",
+      "name": "M5/A3..4 - SkyCommerce.Site",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build.Modulo5.Aula3e4.SkyCommerce.Site",
@@ -239,7 +239,7 @@
       }
     },
     {
-      "name": "Módulo 5 - Aula 3 e 4 - SkyCommerce.SSO",
+      "name": "M5/A3..4 - SkyCommerce.SSO",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build.Modulo5.Aula3e4.SkyCommerce.SSO",
@@ -268,7 +268,7 @@
     },
     /* -------------------------------------------------------------------------- */
     {
-      "name": "Módulo 5 - Aula 6 - SkyCommerce.Frete",
+      "name": "M5/A6 - SkyCommerce.Frete",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build.Modulo5.Aula6.SkyCommerce.Frete",
@@ -296,7 +296,7 @@
       }
     },
     {
-      "name": "Módulo 5 - Aula 6 - SkyCommerce.Site",
+      "name": "M5/A6 - SkyCommerce.Site",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build.Modulo5.Aula6.SkyCommerce.Site",
@@ -324,7 +324,7 @@
       }
     },
     {
-      "name": "Módulo 5 - Aula 6 - SkyCommerce.SSO",
+      "name": "M5/A6 - SkyCommerce.SSO",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build.Modulo5.Aula6.SkyCommerce.SSO",
@@ -351,6 +351,17 @@
         "/Views": "${workspaceFolder}/Views"
       }
     },
+    {
+      "name": "M5/A6 - Parceiro.BackgroundService",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build.Modulo5.Aula6.Parceiro.BackgroundService",
+      "program": "${workspaceFolder}/Modulo5/Aula6/SkyCommerce/Parceiro.BackgroundService/bin/Debug/netcoreapp3.1/Parceiro.BackgroundService.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Modulo5/Aula6/SkyCommerce/Parceiro.BackgroundService",
+      "stopAtEntry": false,
+      "console": "integratedTerminal"
+    },
     /* -------------------------------------------------------------------------- */
     {
       "name": ".NET Core Attach",
@@ -360,34 +371,34 @@
   ],
   "compounds": [
     {
-      "name": "Módulo 4 - Aula 5 - All",
+      "name": "M4/A5 - Aula 5 - All",
       "configurations": [
-        "Módulo 4 - SkyCommerce.Site",
-        "Módulo 4 - SkyCommerce.SSO"
+        "M4/A5 - SkyCommerce.Site",
+        "M4/A5 - SkyCommerce.SSO"
       ]
     },
     {
-      "name": "Módulo 5 - Aula 2 - All",
+      "name": "M5/A2 - All",
       "configurations": [
-        "Módulo 5 - Aula 2 - SkyCommerce.Frete",
-        "Módulo 5 - Aula 2 - SkyCommerce.Site",
-        "Módulo 5 - Aula 2 - SkyCommerce.SSO"
+        "M5/A2 - SkyCommerce.Frete",
+        "M5/A2 - SkyCommerce.Site",
+        "M5/A2 - SkyCommerce.SSO"
       ]
     },
     {
-      "name": "Módulo 5 - Aula 3 e 4 - All",
+      "name": "M5/A3..4 - All",
       "configurations": [
-        "Módulo 5 - Aula 3 e 4 - SkyCommerce.Frete",
-        "Módulo 5 - Aula 3 e 4 - SkyCommerce.Site",
-        "Módulo 5 - Aula 3 e 4 - SkyCommerce.SSO"
+        "M5/A3..4 - SkyCommerce.Frete",
+        "M5/A3..4 - SkyCommerce.Site",
+        "M5/A3..4 - SkyCommerce.SSO"
       ]
     },
     {
-      "name": "Módulo 5 - Aula 6 - All",
+      "name": "M5/A6 - All",
       "configurations": [
-        "Módulo 5 - Aula 6 - SkyCommerce.Frete",
-        "Módulo 5 - Aula 6 - SkyCommerce.Site",
-        "Módulo 5 - Aula 6 - SkyCommerce.SSO"
+        "M5/A6 - SkyCommerce.Frete",
+        "M5/A6 - SkyCommerce.Site",
+        "M5/A6 - SkyCommerce.SSO"
       ]
     }
   ]
