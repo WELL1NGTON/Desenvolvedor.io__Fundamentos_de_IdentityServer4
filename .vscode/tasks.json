@@ -142,6 +142,43 @@
         "/consoleloggerparameters:NoSummary"
       ],
       "problemMatcher": "$msCompile"
+    },
+    /* -------------------------------------------------------------------------- */
+    {
+      "label": "build.Modulo5.Aula6.SkyCommerce.Frete",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Modulo5/Aula6/SkyCommerce/SkyCommerce.Frete/SkyCommerce.Fretes.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build.Modulo5.Aula6.SkyCommerce.Site",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Modulo5/Aula6/SkyCommerce/SkyCommerce.Loja/SkyCommerce.Site/SkyCommerce.Site.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build.Modulo5.Aula6.SkyCommerce.SSO",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Modulo5/Aula6/SkyCommerce/SkyCommerce.SSO/SkyCommerce.SSO.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
     }
   ]
 }
